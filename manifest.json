@@ -3,7 +3,7 @@
   "name": "HorrorGPT by ちゅーりん",
   "version": "1.0",
   "description": "ChatGPTでホラーゲームが遊べるようになるプラグイン",
-  "permissions": ["scripting", "tabs", "activeTab"],
+  "permissions": ["scripting","activeTab"],
   "action": {
     "default_icon": {
       "16": "./neko_16x16.png",
@@ -15,12 +15,6 @@
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [
-    {
-      "matches": ["https://chat.openai.com/chat*"],
-      "js": ["content.js"]
-    }
-  ],
   "web_accessible_resources": [
     {
       "resources": ["sound/*"],

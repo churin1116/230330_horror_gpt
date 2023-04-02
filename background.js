@@ -286,9 +286,9 @@ and make a string such as Also, please output in markdown format and display as 
       };
 
       const soundNames = [
-        'barking_dog_in_dream', 'coming_of_terror', 'dark_atmosphere', 'footsteps_of the_past', 'gaining_weight',
-        'ghost_sigh', 'ghosts', 'going_mad1', 'going_mad2', 'headache', 'horror_piano chord1', 'horror_piano chord2',
-        'laughing1', 'shock1', 'shock2', 'suspicion1', 'suspicion2', 'terror', 'terror_attack', 'terror_clock',
+        '300hz_noise','2400hz_noise','barking_dog_in_dream', 'coming_of_terror', 'dark_atmosphere', 'footsteps_of the_past', 'gaining_weight',
+        'ghost_sigh', 'ghosts', 'going_mad1', 'going_mad2', 'headache', 'horror_piano chord1', 'horror_piano chord2', 'loud_noise',
+        'laughing1', 'shock1', 'shock2', 'surprising_shock2', 'suspicion1', 'suspicion2', 'terror', 'terror_attack', 'terror_clock',
         'tinnitus1', 'tinnitus2', 'white_noise1','3_zon_kurau','私には君達が見える','怪物の笑い声','3_ahhahha',
       ];
 
@@ -298,7 +298,7 @@ and make a string such as Also, please output in markdown format and display as 
       ];
 
       const randomSoundIntervalId = playRandomSound(soundNames, 1000, 120 * 1000);
-      const randomSoundIntervalId2 = playRandomSound(soundNames2, 1000, 240 * 1000);
+      const randomSoundIntervalId2 = playRandomSound(soundNames2, 1000, 200 * 1000);
 
 
 
