@@ -188,31 +188,31 @@ and make a string such as Also, please output in markdown format and display as 
 
         for (const childElement of element.querySelectorAll('*')) {
           played = played || playAudio(childElement, 'monster-room1', '3_zon_kurau')
-          || playAudio(childElement, 'monster-room2', '私には君達が見える')
-          || playAudio(childElement, 'monster-room3', '怪物の笑い声')
+          || playAudio(childElement, 'monster-room2', 'icahwatchyou')
+          || playAudio(childElement, 'monster-room3', 'ridicule')
           || playAudio(childElement, 'ghost_room1', '3_ahhahha')
           || playAudio(childElement, 'ghost_room2', 'ghost_laughter3')
           || playAudio(childElement, 'ghost_room3', '3_ahhahha')
-          || playAudio(childElement, 'corridor2', 'はっ！・・・だれ？')
-          || playAudio(childElement, 'corridor3', 'なにかある')
-          || playAudio(childElement, 'corridor4', 'はっ！・・・だれ？')
-          || playAudio(childElement, 'corridor5', 'なにかある')
-          || playAudio(childElement, 'corridor6', 'はっ！・・・だれ？')
-          || playAudio(childElement, 'spooky-room1', 'なにかある')
-          || playAudio(childElement, 'spooky-room2', '誰？')
-          || playAudio(childElement, 'spooky-room3', '誰？')
-          || playAudio(childElement, 'spooky-room4', 'なにかある')
-          || playAudio(childElement, 'mystery-room1', 'ほぁーきれい')
-          || playAudio(childElement, 'mystery-room3', 'ほぁーきれい')
-          || playAudio(childElement, 'administrator-room', '君たちを歓迎しよう')
+          || playAudio(childElement, 'corridor2', 'who2')
+          || playAudio(childElement, 'corridor3', 'discover')
+          || playAudio(childElement, 'corridor4', 'who2')
+          || playAudio(childElement, 'corridor5', 'discover')
+          || playAudio(childElement, 'corridor6', 'who2')
+          || playAudio(childElement, 'spooky-room1', 'discover')
+          || playAudio(childElement, 'spooky-room2', 'who')
+          || playAudio(childElement, 'spooky-room3', 'who')
+          || playAudio(childElement, 'spooky-room4', 'discover')
+          || playAudio(childElement, 'mystery-room1', 'beautiful')
+          || playAudio(childElement, 'mystery-room3', 'beautiful')
+          || playAudio(childElement, 'administrator-room', 'welcome')
           ;
         }
       
         // いずれも音が再生されなかった時に playOpenAudio を実行
         if (!played) {
-          playOpenAudio(element, ['happy','normal','smile','confused'], ['あけますよ～', 'あれ？・・・ここはどこ？', 'ふぅ～','くしゃみ','くしゃみ']);
-          playOpenAudio(element, ['anxious','dissatisfied'], ['いやな予感がする', 'うーん', 'ここはどこ？','どうなってるの？','どこまでつづくの？','誰？','息を飲み込む','ひっ','ひゃ','へ？','わたし・・・','悲鳴','熱がある','くしゃみ','くしゃみ']);
-          playOpenAudio(element, ['surprised'], ['へ？']);
+          playOpenAudio(element, ['happy','normal','smile','confused'], ['open', 'where', 'huu','sneeze','sneeze']);
+          playOpenAudio(element, ['anxious','dissatisfied'], ['bad_feeling', 'umm', 'where','what','howlong','who','breath_away','hhi','hya','fe','i___','scream','fever','sneeze','sneeze']);
+          playOpenAudio(element, ['surprised'], ['fe']);
         }
       }
       
@@ -289,12 +289,12 @@ and make a string such as Also, please output in markdown format and display as 
         '300hz_noise','2400hz_noise','barking_dog_in_dream', 'coming_of_terror', 'dark_atmosphere', 'footsteps_of the_past', 'gaining_weight',
         'ghost_sigh', 'ghosts', 'going_mad1', 'going_mad2', 'headache', 'horror_piano chord1', 'horror_piano chord2', 'loud_noise',
         'laughing1', 'shock1', 'shock2', 'surprising_shock2', 'suspicion1', 'suspicion2', 'terror', 'terror_attack', 'terror_clock',
-        'tinnitus1', 'tinnitus2', 'white_noise1','3_zon_kurau','私には君達が見える','怪物の笑い声','3_ahhahha',
+        'tinnitus1', 'tinnitus2', 'white_noise1','3_zon_kurau','icahwatchyou','ridicule','3_ahhahha',
       ];
 
       const soundNames2 = [
-        'あれ？・・・ここはどこ？', 'ふぅ～','くしゃみ','くしゃみ',
-        'いやな予感がする', 'うーん', 'どうなってるの？','どこまでつづくの？','ひっ','ひゃ','へ？','わたし・・・','悲鳴','熱がある',
+        'where', 'huu','sneeze','sneeze',
+        'bad_feeling', 'umm', 'what','howlong','hhi','hya','fe','i___','scream','fever',
       ];
 
       const randomSoundIntervalId = playRandomSound(soundNames, 1000, 120 * 1000);
