@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
   "name": "HorrorGPT by ちゅーりん",
-  "version": "1.1",
+  "version": "1.2",
   "description": "ChatGPTでホラーゲームが遊べるようになるプラグイン",
   "permissions": ["scripting","activeTab"],
   "action": {
     "default_icon": {
-      "16": "./neko_16x16.png",
-      "32": "./neko_32x32.png",
-      "48": "./neko_48x48.png",
-      "128": "./neko_128x128.png"
+      "16": "./neko_black_16x16.png",
+      "32": "./neko_black_32x32.png",
+      "48": "./neko_black_48x48.png",
+      "128": "./neko_black_128x128.png"
     }
   },
   "background": {
@@ -22,9 +22,9 @@
     }
   ],
   "icons": {
-    "16": "./neko_16x16.png",
-    "32": "./neko_32x32.png",
-    "48": "./neko_48x48.png",
-    "128": "./neko_128x128.png"
+    "16": "./neko_black_16x16.png",
+    "32": "./neko_black_32x32.png",
+    "48": "./neko_black_48x48.png",
+    "128": "./neko_black_128x128.png"
   }
 }
